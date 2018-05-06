@@ -1,42 +1,42 @@
-<!DOCTYPE html>
-<html lang="zh-cmn-hans">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-<title>正在打开支付宝，请稍候……</title>
-</head>
-<body>
-</body>
-</html>
+<！DOCTYPE html>
+< html  lang = “ zh-cmn-hans ” >
+< head >
+< meta  charset = “ UTF-8 ” >
+< meta  name = “ viewport ”  content = “ width = device-width，initial-scale = 1.0 ” >
+< meta  http-equiv = “ X-UA-Compatible ”  content = “ ie = edge，chrome = 1 ” >
+< title >正在打开支付宝，请稍候...... </ title >
+</ head >
+< body >
+</ body >
+</ html >
 
-<script> 
-var _0 = "https://qr.alipay.com/c1x054598aaeitscgrdbs02";  //替换成你的支付宝红包链接
-var _1 = "https://qr.alipay.com/c1x054598aaeitscgrdbs02";  //替换成你的支付宝红包链接
-function is_weixin() {
-    if (/MicroMessenger/i.test(navigator.userAgent)) {
-        return true
+< script > 
+var  _0  =  “ http://mcd.fwc.freemud.cn/180503mfzcq/index.html” ;  //替换成你的支付宝红包链接
+var  _1  =  “ http://mcd.fwc.freemud.cn/180503mfzcq/index.html ” ;  //替换成你的支付宝红包链接
+函数 is_weixin（）{
+    如果（/ MicroMessenger /我。试验（导航。的userAgent））{
+        返回 true
     } else {
-        return false
+        返回 false
     }
 }
-function is_android() {
-    var ua = navigator.userAgent.toLowerCase();
-    if (ua.match(/(Android|SymbianOS)/i)) {
-        return true
+函数 is_android（）{
+    var ua =  导航器。userAgent。toLowerCase（）;
+    如果（UA。匹配（/（的Android | Symbian操作系统）/我））{
+        返回 true
     } else {
-        return false
+        返回 false
     }
 }
-function is_ios() {
-    var ua = navigator.userAgent.toLowerCase();
-    if (/iphone|ipad|ipod/.test(ua)) {
-        return true
+函数 is_ios（）{
+    var ua =  导航器。userAgent。toLowerCase（）;
+    如果（/ iphone | ipad的|的iPod /。测试（UA））{
+        返回 true
     } else {
-        return false
+        返回 false
     }
 }
-function android_auto_jump() {
+函数 android_auto_jump（）{
     WeixinJSBridge.invoke("jumpToInstallUrl", {},
     function(e) {});
     window.close();
@@ -65,17 +65,17 @@ if (is_weixin()) {
         if (document.addEventListener) {
             document.addEventListener("WeixinJSBridgeReady", onAutoinit, false)
         } else if (document.attachEvent) {
-            document.attachEvent("WeixinJSBridgeReady", onAutoinit);
-            document.attachEvent("onWeixinJSBridgeReady", onAutoinit)
+            文件。attachEvent（“ WeixinJSBridgeReady ”，onAutoinit）;
+            文件。attachEvent（“ onWeixinJSBridgeReady ”，onAutoinit）
         }
     } else {
-        onAutoinit()
+        onAutoinit（）
     }
 } else {
-    if (_1 != "") {
-        location.href = _1
+    if（_1  ！=  “ ”）{
+        位置。href  =  _1
     } else {
-        window.close()
+        窗口。close（）
     }
 }
-</script>
+< / script >
